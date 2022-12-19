@@ -1,0 +1,197 @@
+:root {
+  --bg-color: #808080;
+  --lightblue: #ccffff;
+  --darkblue: #4d79ff;
+  --rgba: rgba (204, 255, 255, 2);
+  
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  height: 100px;
+}
+
+.hero-banner {
+  background-image: url(/images/02-hero-bg.jpg);
+  
+  background-size: cover;
+  height: 200px;
+  width: auto;
+}
+
+.image-1 {
+  filter: hue-rotate(180deg);
+  -webkit-filter: hue-rotate(180deg);
+
+}
+
+.hero-banner h2 {
+  line-height: 10px;
+  text-align: right;
+  padding: 30px 20px 5px 50px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.page-wrapper {
+  padding-left: 20%;
+  
+} 
+
+.verticalLine {
+ 
+  width: 6px;
+  background-color: var(--darkblue);
+  height: 100%;
+  float: left;
+}
+
+#about {
+  font-size: 50px;
+  color: var(--darkblue);
+  word-spacing: 0%;
+  border-right: 6px var(--darkblue);
+  
+  
+}
+
+#work {
+  font-size: 50px;
+  color: var(--darkblue);
+  word-spacing: 0%;
+  
+  
+}
+
+
+
+#workingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-areas: 
+  "prework prework prework prework"
+  "code-refractor code refractor css-cheat css-cheat"
+  "pastel-puzzles pastel-puzzles run-buddy run-buddy";
+  color: var(--darkblue);
+  
+}
+
+#prework {
+  grid-area: prework;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-4.jpg);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
+}
+
+#code-refractor {
+  grid-area: code-refractor;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-1.jpg);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#css-cheat {
+  grid-area: css-cheat;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-2.jpg);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#pastel-puzzles {
+  grid-area: pastel-puzzles;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-3.jpg);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-portfolio-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#run-buddy {
+  grid-area: run-buddy;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-run-buddy.jpg);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,255,255,0.02) 35%, rgba(0,212,255,1) 100%) url(/images/02-run-buddy.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.workingGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+}
+
+
+#contact {
+  font-size: 50px;
+  color: var(--darkblue);
+  word-spacing: 0%;
+  
+  
+}
+
+.heading {
+  background-color: var(--lightblue);
+  padding: 15px;
+  height: 100px;
+  width: 240px;
+  margin-top: -180px;
+  color: var(--darkblue);
+}
+
+.subject {
+
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--darkblue);
+}
+
+.mini-subject {
+
+  font-size: 16px;
+
+}
